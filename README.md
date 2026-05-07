@@ -1,2 +1,2 @@
-# portifolio-joao-victor-jesus-silva
-Portifólio de projetos de tecnologia e inteligência artificial
+# portfolio-joao-victor-jesus-silva
+Portfólio de projetos de tecnologia e inteligência artificial

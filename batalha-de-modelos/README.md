@@ -165,3 +165,5 @@ Também foi possível observar diferenças claras em:
 # 📄 Licença
 
 Projeto acadêmico desenvolvido para fins educacionais.
+
+[⬆ Voltar ao início](##-sobre-o-projeto)

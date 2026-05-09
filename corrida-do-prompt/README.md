@@ -108,6 +108,6 @@ Através de testes e refinamentos contínuos, foi possível observar melhorias s
 # 👨‍💻 Autor
 
 ### João Victor de Jesus Silva
-### Pedro 
+### Pedro Henrique Amaral Silva
 
 Estudante de Análise e Desenvolvimento de Sistemas — UNICID

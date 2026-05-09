@@ -39,6 +39,10 @@ Atualmente cursando o 1º período de ADS na UNICID. Sou apaixonado por resolver
 #### 🤖 Inteligência Artificial
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
+| **Corrida do prompt** | Analise de aprendizado da IA. | [Ver Projeto](./corrida-do-prompt/) |
+| **Classificação visual** | Laboratorio de classificação visual por IA. | [Ver Projeto](./laboratorio-classificacao-visual/) |
+| **Batalha de modelos** | Comparação de capacidade evolutiva das IAs. | [Ver Projeto](./batalha-de-modelos/) |
+| **Engenharia reversa** | Atividade de duplicação de codigos. | [Ver Projeto](./Engenharia-reversa/) |
 | **Cronograma de demandas** | Web app para o gerênciamento de demandas. | [Ver Projeto](./projeto-cronograma-demandas/) |
  
 ---

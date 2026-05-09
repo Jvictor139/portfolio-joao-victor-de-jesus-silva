@@ -125,7 +125,7 @@ Destaque de Sintaxe: Se possível, adicione syntax highlighting básico no campo
 
 # 📸 Resultado Gerado
 
-![Preview do Projeto](images/StackEditClone.png)
+![Preview do Projeto](imagens/StackEditClone.png)
 
 ---
 

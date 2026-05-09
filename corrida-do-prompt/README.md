@@ -77,7 +77,11 @@ Um e-mail formal de desculpas de um pirata para um rei.
 
 ## 📈 Resultados Observados
 
-
+![Resultado](Prompts/Textos/imagem1.jpeg)
+![Resultado](Prompts/Textos/imagem2.jpeg)
+![Resultado](Prompts/Textos/imagem3.jpeg)
+![Resultado](Prompts/Textos/imagem4.jpeg)
+![Resultado](Prompts/Textos/imagem5.jpeg)
 
 ---
 

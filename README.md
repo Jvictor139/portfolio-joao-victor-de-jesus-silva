@@ -6,7 +6,7 @@
 ### 📫 Contato & Redes Sociais
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jvictor-jesus-silva-958759336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 [![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jvictorjesussilva123@gmail.com.br)
-[![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-the-badge&logo=read-the-docs&logoColor=white)](LINK_DO_PDF_OU_SITE)
+[![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://1drv.ms/w/c/25a9f37c5074c2a6/IQB1ZjyGCRnqQKDJhnvhJkMcAaHqXY08_n-wiG15RBDahu4?e=cQUpze)
  
 ---
  

@@ -1,0 +1,50 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // 0. Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // 3. Global Helpers
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Validations
+    function isValidUser(data) {
+      return data.palette is string && data.palette.size() <= 50;
+    }
+
+    function isValidDocument(data) {
+      return data.content is string && data.content.size() <= 1048576 
+        && data.updatedAt is timestamp;
+    }
+
+    // Collection Matches
+    match /test/connection {
+      allow get: if true;
+    }
+
+    match /users/{userId} {
+      allow get: if isOwner(userId);
+      allow create, update: if isOwner(userId) && isValidUser(request.resource.data);
+    }
+
+    match /documents/{userId} {
+      allow get: if isOwner(userId);
+      allow create, update: if isOwner(userId) && isValidDocument(request.resource.data);
+      allow list: if isOwner(userId);
+    }
+
+    match /shares/{shareId} {
+      allow get: if true;
+      allow create: if true; // Allows anyone to create a share
+    }
+  }
+}

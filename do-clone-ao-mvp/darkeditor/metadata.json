@@ -1,0 +1,5 @@
+{
+  "name": "DarkEditor",
+  "description": "A minimalist dark mode markdown editor with cloud sync, drag-and-drop support, and advanced sharing features.",
+  "requestFramePermissions": []
+}

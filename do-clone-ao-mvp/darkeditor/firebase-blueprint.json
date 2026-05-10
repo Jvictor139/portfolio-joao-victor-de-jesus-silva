@@ -1,0 +1,45 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User preferences and profile",
+      "type": "object",
+      "properties": {
+        "palette": {
+          "type": "string",
+          "description": "Selected theme palette"
+        }
+      }
+    },
+    "Document": {
+      "title": "Document",
+      "description": "Markdown document content",
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "description": "Markdown content"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Stores user-specific preferences"
+    },
+    "/documents/{userId}": {
+      "schema": "Document",
+      "description": "Stores user-specific document content"
+    },
+    "/shares/{shareId}": {
+      "schema": "Document",
+      "description": "Stores publicly shareable documents"
+    }
+  }
+}

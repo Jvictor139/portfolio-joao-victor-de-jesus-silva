@@ -1,0 +1,197 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "prismjs/themes/prism.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg-app: #ffffff;
+  --bg-editor: #fbfbfb;
+  --bg-preview: #ffffff;
+  --bg-toolbar: #ffffff;
+  --text-main: #1a1a1a;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+  --caret-color: #1a1a1a;
+  --accent: #3b82f6;
+  --token-header: #2563eb;
+  --token-list: #ea580c;
+  --token-link: #3b82f6;
+  --token-code: #9333ea;
+  --token-code-bg: #f5f3ff;
+  --token-blockquote: #9ca3af;
+}
+
+[data-palette="default-dark"] {
+  --bg-app: #09090b;
+  --bg-editor: #09090b;
+  --bg-preview: #09090b;
+  --bg-toolbar: #09090b;
+  --text-main: #fafafa;
+  --text-muted: #a1a1aa;
+  --border-color: #27272a;
+  --caret-color: #fafafa;
+  --accent: #3b82f6;
+  --token-header: #60a5fa;
+  --token-list: #fb923c;
+  --token-link: #60a5fa;
+  --token-code: #c084fc;
+  --token-code-bg: #2e1065;
+  --token-blockquote: #71717a;
+}
+
+[data-palette="midnight"] {
+  --bg-app: #020617;
+  --bg-editor: #020617;
+  --bg-preview: #020617;
+  --bg-toolbar: #020617;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #1e293b;
+  --caret-color: #f8fafc;
+  --accent: #8b5cf6;
+  --token-header: #818cf8;
+  --token-list: #fb923c;
+  --token-link: #818cf8;
+  --token-code: #d8b4fe;
+  --token-code-bg: #4c1d95;
+  --token-blockquote: #475569;
+}
+
+[data-palette="forest"] {
+  --bg-app: #052e16;
+  --bg-editor: #052e16;
+  --bg-preview: #052e16;
+  --bg-toolbar: #052e16;
+  --text-main: #f0fdf4;
+  --text-muted: #86efac;
+  --border-color: #14532d;
+  --caret-color: #f0fdf4;
+  --accent: #22c55e;
+  --token-header: #4ade80;
+  --token-list: #facc15;
+  --token-link: #4ade80;
+  --token-code: #5eead4;
+  --token-code-bg: #134e4a;
+  --token-blockquote: #166534;
+}
+
+[data-palette="crimson"] {
+  --bg-app: #450a0a;
+  --bg-editor: #450a0a;
+  --bg-preview: #450a0a;
+  --bg-toolbar: #450a0a;
+  --text-main: #fef2f2;
+  --text-muted: #fca5a5;
+  --border-color: #7f1d1d;
+  --caret-color: #fef2f2;
+  --accent: #f43f5e;
+  --token-header: #fb7185;
+  --token-list: #fdba74;
+  --token-link: #fb7185;
+  --token-code: #fca5a5;
+  --token-code-bg: #881337;
+  --token-blockquote: #991b1b;
+}
+
+[data-palette="light"] {
+  --bg-app: #ffffff;
+  --bg-editor: #fbfbfb;
+  --bg-preview: #ffffff;
+  --bg-toolbar: #ffffff;
+  --text-main: #1a1a1a;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+  --caret-color: #1a1a1a;
+  --accent: #3b82f6;
+  --token-header: #2563eb;
+  --token-list: #ea580c;
+  --token-link: #3b82f6;
+  --token-code: #9333ea;
+  --token-code-bg: #f5f3ff;
+  --token-blockquote: #9ca3af;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg-app)] text-[var(--text-main)] font-sans antialiased transition-colors duration-500;
+  }
+}
+
+/* Markdown Preview Styles */
+.prose {
+  @apply max-w-none text-[var(--text-main)];
+}
+
+.prose h1 { @apply text-3xl font-bold mb-6 mt-8 border-b border-[var(--border-color)] pb-2; }
+.prose h2 { @apply text-2xl font-semibold mb-4 mt-6 border-b border-[var(--border-color)] pb-1; }
+.prose h3 { @apply text-xl font-semibold mb-3 mt-5; }
+.prose p { @apply mb-4 leading-relaxed opacity-90; }
+.prose ul { @apply list-disc pl-6 mb-4; }
+.prose ol { @apply list-decimal pl-6 mb-4; }
+.prose li { @apply mb-1; }
+.prose blockquote { @apply border-l-4 border-[var(--accent)] bg-[var(--border-color)]/20 pl-4 py-1 italic my-4 text-[var(--text-muted)]; }
+.prose code { @apply bg-[var(--token-code-bg)] text-[var(--token-code)] px-1.5 py-0.5 rounded font-mono text-sm; }
+.prose pre { @apply bg-[var(--bg-app)] text-[var(--text-main)] p-6 rounded-2xl my-6 overflow-x-auto border border-[var(--border-color)] shadow-xl; }
+.prose pre code { @apply bg-transparent p-0 text-inherit; }
+.prose a { @apply text-[var(--accent)] hover:underline font-medium; }
+.prose img { @apply max-w-full h-auto rounded-2xl my-8 shadow-2xl; }
+.prose table { @apply w-full border-collapse mb-4; }
+.prose th, .prose td { @apply border border-[var(--border-color)] p-2 text-left; }
+.prose th { @apply bg-[var(--border-color)]/30; }
+
+/* Editor Syntax Highlighting Layer */
+.editor-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.editor-textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  caret-color: var(--caret-color);
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  z-index: 10;
+}
+
+.editor-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  pointer-events: none;
+  color: var(--text-main);
+}
+
+/* Basic Markdown Syntax Highlighting in Editor */
+.token.header { color: var(--token-header); font-weight: bold; }
+.token.bold { @apply font-bold; }
+.token.italic { @apply italic; }
+.token.list { color: var(--token-list); }
+.token.link { color: var(--token-link); @apply underline; }
+.token.code { color: var(--token-code); background-color: var(--token-code-bg); @apply px-1 rounded; }
+.token.blockquote { color: var(--token-blockquote); @apply italic; }

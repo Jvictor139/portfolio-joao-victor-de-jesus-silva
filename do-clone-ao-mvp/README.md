@@ -219,9 +219,7 @@ O foco principal foi transformar um clone inicial em uma aplicação com caracte
 
 # 📷 Demonstração
 
-```txt
-Adicione aqui screenshots do projeto
-```
+https://ai.studio/apps/1cfa9297-9e41-415e-a589-9239edf08eba
 
 ---
 
